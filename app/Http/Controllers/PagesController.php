@@ -19,4 +19,8 @@ class PagesController extends Controller
     public function contact(){
       return view('contact');
     }
+
+    public function imageImport(){
+      return "Image imported";
+    }
 }

@@ -19,6 +19,18 @@ Route::get('home', 'PagesController@home');
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 
+
 // Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/redirect', 'SocialAuthFacebookController@redirect');
+Route::get('/callback', 'SocialAuthFacebookController@callback');
+
+Route::get('home', 'PagesController@home');
+Route::get('about', 'PagesController@about');
+Route::get('contact', 'PagesController@contact');
+Route::post('importImage', 'PagesController@imageImport');
