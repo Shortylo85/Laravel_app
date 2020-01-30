@@ -57,6 +57,9 @@
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="{{'contact'}}">Contact Us</a>
+                            <li class="nav-item">
+                              <a class="nav-link" href="{{'posts'}}">Posts</a>
+                            </li>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

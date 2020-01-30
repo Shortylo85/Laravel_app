@@ -34,3 +34,4 @@ Route::get('home', 'PagesController@home');
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 Route::post('importImage', 'PagesController@imageImport');
+Route::get('posts', 'PostsController@showPosts');
