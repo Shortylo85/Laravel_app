@@ -35,3 +35,5 @@ Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 Route::post('importImage', 'PagesController@imageImport');
 Route::get('posts', 'PostsController@showPosts');
+Route::get('paginatedPosts','PostsController@paginatedPosts');
+Route::get('jsonPosts', 'PostsController@jsonPosts');
