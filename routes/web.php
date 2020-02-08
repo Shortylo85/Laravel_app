@@ -37,3 +37,4 @@ Route::post('importImage', 'PagesController@imageImport');
 Route::get('posts', 'PostsController@showPosts');
 Route::get('paginatedPosts','PostsController@paginatedPosts');
 Route::get('jsonPosts', 'PostsController@jsonPosts');
+Route::post('testPost','TestsController@testResponse');
