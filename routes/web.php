@@ -38,3 +38,6 @@ Route::get('posts', 'PostsController@showPosts');
 Route::get('paginatedPosts','PostsController@paginatedPosts');
 Route::get('jsonPosts', 'PostsController@jsonPosts');
 Route::post('testPost','TestsController@testResponse');
+Route::group(['prefix'=>'api/1', 'middleware'=>'api'], function(){
+  Route::resource('postsrests', 'PostsControllerRest');
+});
