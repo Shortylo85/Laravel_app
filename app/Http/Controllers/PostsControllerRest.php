@@ -54,7 +54,17 @@ class PostsControllerRest extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+
+        if(!$post){
+          $response = Response::json([
+            'error'=>['message'=>'There is no post with given id']
+          ],404);
+          return $response;
+        }
+
+        $response = Response::json($post,200);
+        return $response;
     }
 
     /**
